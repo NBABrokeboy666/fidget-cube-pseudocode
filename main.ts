@@ -7,6 +7,9 @@ input.onButtonPressed(Button.A, function () {
     music.playTone(392, music.beat(BeatFraction.Double))
     music.playTone(196, music.beat(BeatFraction.Whole))
 })
+input.onGesture(Gesture.FreeFall, function () {
+    basic.showString("i believe i can fly")
+})
 input.onGesture(Gesture.TiltLeft, function () {
     basic.showArrow(ArrowNames.West)
 })
